@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FixFinder Documentation</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6d28d9, #9333ea);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: #6d28d9;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        .screen {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 12px;
+        }
+
+        .screen h3 {
+            color: #333;
+        }
+
+        .screen p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .screen img {
+            width: 100%;
+            max-width: 1000px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .workflow {
+            background: #f3e8ff;
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>🛠️ FixFinder</h1>
+
+    <p>Home Service Platform – Project Documentation</p>
+
+    <p>
+        A platform that helps customers find the right service
+        and technician for their home problems.
+    </p>
+
+</header>
+
+
+<div class="container">
+
+
+    <!-- PROJECT OVERVIEW -->
+
+    <div class="section">
+
+        <h2>1. Project Overview</h2>
+
+        <p>
+            FixFinder is a home service platform that helps users
+            identify their home service problems and find suitable
+            technicians.
+        </p>
+
+        <div class="workflow">
+
+            Customer
+            ↓
+            Login / Register
+            ↓
+            Describe Problem
+            ↓
+            Diagnose Problem
+            ↓
+            Recommended Service
+            ↓
+            Find Technician
+            ↓
+            View Technician
+            ↓
+            Book Service
+            ↓
+            My Bookings
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CUSTOMER MODULE -->
+
+    <div class="section">
+
+        <h2>2. Customer Module</h2>
+
+        <p>
+            The customer module allows users to register, login,
+            identify their home problems, view diagnosis results,
+            find technicians and book services.
+        </p>
+
+
+        <!-- 01 -->
+
+        <div class="screen">
+
+            <h3>Customer Home Page – Screen 01</h3>
+
+            <p>
+                This is the main page of FixFinder.
+                Customers can start the service finding process
+                from this page.
+            </p>
+
+            <img
+                src="./screenshots/customer/01-home.png"
+                alt="Customer Home Page"
+            >
+
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="screen">
+
+            <h3>Home Services – Screen 02</h3>
+
+            <p>
+                This screen displays the available home services
+                that customers can explore.
+            </p>
+
+            <img
+                src="./screenshots/customer/02-home-services.png"
+                alt="Home Services"
+            >
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="screen">
+
+            <h3>Customer Login – Screen 03</h3>
+
+            <p>
+                Existing customers can enter their login credentials
+                to access their FixFinder account.
+            </p>
+
+            <img
+                src="./screenshots/customer/03-login.png"
+                alt="Customer Login"
+            >
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="screen">
+
+            <h3>Customer Registration – Screen 04</h3>
+
+            <p>
+                New customers can create an account by entering
+                the required registration information.
+            </p>
+
+            <img
+                src="./screenshots/customer/04-register.png"
+                alt="Customer Registration"
+            >
+
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="screen">
+
+            <h3>Registration Success – Screen 05</h3>
+
+            <p>
+                This screen confirms that the customer registration
+                process has been completed successfully.
+            </p>
+
+            <img
+                src="./screenshots/customer/05-register-success.png"
+                alt="Registration Success"
+            >
+
+        </div>
+
+
+        <!-- 06 -->
+
+        <div class="screen">
+
+            <h3>Customer Dashboard – Screen 06</h3>
+
+            <p>
+                The customer dashboard provides access to important
+                services, diagnosis, bookings and account activities.
+            </p>
+
+            <img
+                src="./screenshots/customer/06-dashboard.png"
+                alt="Customer Dashboard"
+            >
+
+        </div>
+
+
+        <!-- 07 -->
+
+        <div class="screen">
+
+            <h3>Diagnose Problem – Screen 07</h3>
+
+            <p>
+                The customer describes the home problem.
+                FixFinder uses the provided problem information
+                to identify the appropriate service.
+            </p>
+
+            <img
+                src="./screenshots/customer/07-diagnose.png"
+                alt="Diagnose Problem"
+            >
+
+        </div>
+
+
+        <!-- 08 -->
+
+        <div class="screen">
+
+            <h3>Diagnosis Result – Screen 08</h3>
+
+            <p>
+                The system displays the first stage of the diagnosis
+                result based on the customer's problem.
+            </p>
+
+            <img
+                src="./screenshots/customer/08-diagnose-result.png"
+                alt="Diagnosis Result Screen 08"
+            >
+
+        </div>
+
+
+        <!-- 09 -->
+
+        <div class="screen">
+
+            <h3>Diagnosis Result – Screen 09</h3>
+
+            <p>
+                This screen provides additional diagnosis information,
+                possible causes and related problem details.
+            </p>
+
+            <img
+                src="./screenshots/customer/09-diagnose-result.png"
+                alt="Diagnosis Result Screen 09"
+            >
+
+        </div>
+
+
+        <!-- 10 -->
+
+        <div class="screen">
+
+            <h3>Diagnosis Result – Screen 10</h3>
+
+            <p>
+                This screen continues the diagnosis result and
+                presents the recommended service information.
+            </p>
+
+            <img
+                src="./screenshots/customer/10-diagnose-result.png"
+                alt="Diagnosis Result Screen 10"
+            >
+
+        </div>
+
+
+        <!-- 11 -->
+
+        <div class="screen">
+
+            <h3>View Technicians – Screen 11</h3>
+
+            <p>
+                Customers can view technicians who provide the
+                required service.
+            </p>
+
+            <img
+                src="./screenshots/customer/11-view-technicians.png"
+                alt="View Technicians Screen 11"
+            >
+
+        </div>
+
+
+        <!-- 12 -->
+
+        <div class="screen">
+
+            <h3>View Technicians – Screen 12</h3>
+
+            <p>
+                This screen displays additional technician results
+                available for the selected service.
+            </p>
+
+            <img
+                src="./screenshots/customer/12-view-technicians.png"
+                alt="View Technicians Screen 12"
+            >
+
+        </div>
+
+
+        <!-- 13 -->
+
+        <div class="screen">
+
+            <h3>View Technician Details – Screen 13</h3>
+
+            <p>
+                Customers can view technician information before
+                selecting a technician for the service request.
+            </p>
+
+            <img
+                src="./screenshots/customer/13-view-technician-details.png"
+                alt="Technician Details"
+            >
+
+        </div>
+
+
+        <!-- 14 -->
+
+        <div class="screen">
+
+            <h3>Bookings – Screen 14</h3>
+
+            <p>
+                The customer can provide the required booking
+                information and select the service.
+            </p>
+
+            <img
+                src="./screenshots/customer/14-bookings.png"
+                alt="Bookings Screen 14"
+            >
+
+        </div>
+
+
+        <!-- 15 -->
+
+        <div class="screen">
+
+            <h3>Bookings – Screen 15</h3>
+
+            <p>
+                This screen continues the booking process where
+                the customer confirms the required service details.
+            </p>
+
+            <img
+                src="./screenshots/customer/15-bookings.png"
+                alt="Bookings Screen 15"
+            >
+
+        </div>
+
+
+        <!-- 16 -->
+
+        <div class="screen">
+
+            <h3>Booking Success – Screen 16</h3>
+
+            <p>
+                After successfully submitting the request,
+                the system displays the booking confirmation.
+            </p>
+
+            <img
+                src="./screenshots/customer/16-booking-success.png"
+                alt="Booking Success"
+            >
+
+        </div>
+
+
+        <!-- 17 -->
+
+        <div class="screen">
+
+            <h3>My Bookings – Screen 17</h3>
+
+            <p>
+                Customers can view their submitted service
+                bookings and booking information.
+            </p>
+
+            <img
+                src="./screenshots/customer/17-my-bookings.png"
+                alt="My Bookings Screen 17"
+            >
+
+        </div>
+
+
+        <!-- 18 -->
+
+        <div class="screen">
+
+            <h3>My Bookings – Screen 18</h3>
+
+            <p>
+                This screen provides additional booking information
+                and allows customers to track their service requests.
+            </p>
+
+            <img
+                src="./screenshots/customer/18-my-bookings.png"
+                alt="My Bookings Screen 18"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TECHNICIAN MODULE -->
+
+    <div class="section">
+
+        <h2>3. Technician Module</h2>
+
+        <p>
+            The technician module allows technicians to register,
+            login, view their dashboard, manage services and
+            receive notifications.
+        </p>
+
+
+        <!-- 01 -->
+
+        <div class="screen">
+
+            <h3>Technician Registration – Screen 01</h3>
+
+            <p>
+                New technicians can register by providing
+                their professional and account information.
+            </p>
+
+            <img
+                src="./screenshots/Technicians/01-register.png"
+                alt="Technician Registration Screen 01"
+            >
+
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="screen">
+
+            <h3>Technician Registration – Screen 02</h3>
+
+            <p>
+                This screen continues the technician registration
+                process and collects the required details.
+            </p>
+
+            <img
+                src="./screenshots/Technicians/02-register.png"
+                alt="Technician Registration Screen 02"
+            >
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="screen">
+
+            <h3>Technician Login – Screen 03</h3>
+
+            <p>
+                Registered technicians can login to their account
+                using their credentials.
+            </p>
+
+            <img
+                src="./screenshots/Technicians/03-login.png"
+                alt="Technician Login"
+            >
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="screen">
+
+            <h3>Technician Dashboard – Screen 04</h3>
+
+            <p>
+                The technician dashboard provides an overview
+                of service-related activities and requests.
+            </p>
+
+            <img
+                src="./screenshots/Technicians/04-dashboard.png"
+                alt="Technician Dashboard"
+            >
+
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="screen">
+
+            <h3>Our Services – Screen 05</h3>
+
+            <p>
+                Technicians can view the services they provide
+                through this section.
+            </p>
+
+            <img
+                src="./screenshots/Technicians/05-our-services.png"
+                alt="Technician Services Screen 05"
+            >
+
+        </div>
+
+
+        <!-- 06 -->
+
+        <div class="screen">
+
+            <h3>Our Services – Screen 06</h3>
+
+            <p>
+                This screen provides additional information about
+                the services available to the technician.
+            </p>
+
+            <img
+                src="./screenshots/Technicians/06-our-services.png"
+                alt="Technician Services Screen 06"
+            >
+
+        </div>
+
+
+        <!-- 07 -->
+
+        <div class="screen">
+
+            <h3>Technician Notifications – Screen 07</h3>
+
+            <p>
+                Notifications provide information about new service
+                requests and important updates.
+            </p>
+
+            <img
+                src="./screenshots/Technicians/07-notifications.png"
+                alt="Technician Notifications"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ADMIN MODULE -->
+
+    <div class="section">
+
+        <h2>4. Admin Module</h2>
+
+        <p>
+            The admin module allows administrators to monitor
+            users, bookings and technicians in the FixFinder platform.
+        </p>
+
+
+        <!-- 01 -->
+
+        <div class="screen">
+
+            <h3>Admin Login – Screen 01</h3>
+
+            <p>
+                Administrators can login using their authorized
+                credentials.
+            </p>
+
+            <img
+                src="./screenshots/Admin/01-login.png"
+                alt="Admin Login"
+            >
+
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="screen">
+
+            <h3>Admin Dashboard – Screen 02</h3>
+
+            <p>
+                The admin dashboard provides an overview of
+                important platform activities.
+            </p>
+
+            <img
+                src="./screenshots/Admin/02-dashboard.png"
+                alt="Admin Dashboard"
+            >
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="screen">
+
+            <h3>View Bookings – Screen 03</h3>
+
+            <p>
+                Admin can view booking-related information
+                submitted through the platform.
+            </p>
+
+            <img
+                src="./screenshots/Admin/03-view-bookings.png"
+                alt="View Bookings"
+            >
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="screen">
+
+            <h3>Bookings – Screen 04</h3>
+
+            <p>
+                This screen displays booking information
+                available to the administrator.
+            </p>
+
+            <img
+                src="./screenshots/Admin/04-bookings.png"
+                alt="Admin Bookings"
+            >
+
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="screen">
+
+            <h3>Technicians – Screen 05</h3>
+
+            <p>
+                Admin can view the technicians registered
+                in the FixFinder platform.
+            </p>
+
+            <img
+                src="./screenshots/Admin/05-technicians.png"
+                alt="Admin Technicians"
+            >
+
+        </div>
+
+
+        <!-- 06 -->
+
+        <div class="screen">
+
+            <h3>Technician Details – Screen 06</h3>
+
+            <p>
+                This screen allows the administrator to view
+                detailed information about a technician.
+            </p>
+
+            <img
+                src="./screenshots/Admin/06-technician-details.png"
+                alt="Technician Details"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DATABASE -->
+
+    <div class="section">
+
+        <h2>5. Database</h2>
+
+        <p>
+            MongoDB is used to store FixFinder application data.
+            The database contains information related to users,
+            services, technicians and bookings.
+        </p>
+
+
+        <!-- USERS -->
+
+        <div class="screen">
+
+            <h3>Users Collection</h3>
+
+            <p>
+                The Users collection stores customer,
+                technician and other user account information.
+            </p>
+
+            <img
+                src="./screenshots/Database/users.png"
+                alt="Users Collection"
+            >
+
+        </div>
+
+
+        <!-- SERVICES -->
+
+        <div class="screen">
+
+            <h3>Services Collection</h3>
+
+            <p>
+                The Services collection stores the service
+                information used by the FixFinder platform.
+            </p>
+
+            <img
+                src="./screenshots/Database/services.png"
+                alt="Services Collection"
+            >
+
+        </div>
+
+
+        <!-- TECHNICIANS -->
+
+        <div class="screen">
+
+            <h3>Technicians Collection</h3>
+
+            <p>
+                The Technicians collection stores technician
+                information and service-related details.
+            </p>
+
+            <img
+                src="./screenshots/Database/technicians.png"
+                alt="Technicians Collection"
+            >
+
+        </div>
+
+
+        <!-- BOOKINGS -->
+
+        <div class="screen">
+
+            <h3>Bookings Collection</h3>
+
+            <p>
+                The Bookings collection stores customer
+                service booking information.
+            </p>
+
+            <img
+                src="./screenshots/Database/bookings.png"
+                alt="Bookings Collection"
+            >
+
+        </div>
+
+
+        <!-- OVERALL -->
+
+        <div class="screen">
+
+            <h3>Overall Database</h3>
+
+            <p>
+                This screen provides an overall view of the
+                FixFinder database structure and stored data.
+            </p>
+
+            <img
+                src="./screenshots/Database/overall-table.png"
+                alt="Overall Database"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FINAL WORKFLOW -->
+
+    <div class="section">
+
+        <h2>6. Overall System Workflow</h2>
+
+        <div class="workflow">
+
+            Customer
+            ↓
+            Register / Login
+            ↓
+            Customer Dashboard
+            ↓
+            Describe Problem
+            ↓
+            Diagnosis
+            ↓
+            Recommended Service
+            ↓
+            Find Technician
+            ↓
+            Technician Details
+            ↓
+            Book Service
+            ↓
+            Booking Stored in MongoDB
+            ↓
+            Technician Receives Request
+            ↓
+            Admin Monitors Booking
+            ↓
+            Service Completed
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<footer>
+
+    <p>FixFinder – Home Service Platform</p>
+
+    <p>Project Documentation</p>
+
+</footer>
+
+</body>
+
+</html>
